@@ -25,14 +25,14 @@
                                 <color key="textColor" systemColor="systemCyanColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bug" translatesAutoresizingMaskIntoConstraints="NO" id="F2B-mz-2VX">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="bug" translatesAutoresizingMaskIntoConstraints="NO" id="F2B-mz-2VX">
                                 <rect key="frame" x="0.0" y="426" width="393" height="426"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="34K-nG-otO" firstAttribute="top" secondItem="lb8-Ai-jYs" secondAttribute="bottom" constant="-59" id="oei-62-oJy"/>
+                            <constraint firstItem="ygb-yQ-0F9" firstAttribute="top" secondItem="F2B-mz-2VX" secondAttribute="bottom" constant="46" id="ytW-Kr-Aa7"/>
                         </constraints>
                     </view>
                 </viewController>
