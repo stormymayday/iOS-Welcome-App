@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -16,23 +16,37 @@
                         <viewControllerLayoutGuide type="bottom" id="ygb-yQ-0F9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Welcome to iOS App Development!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="34K-nG-otO">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="426"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bug" translatesAutoresizingMaskIntoConstraints="NO" id="F2B-mz-2VX">
+                                <rect key="frame" x="0.0" y="155" width="844" height="214"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to iOS App Development!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="34K-nG-otO">
+                                <rect key="frame" x="0.0" y="-59" width="844" height="214"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="55"/>
                                 <color key="textColor" systemColor="systemCyanColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="bug" translatesAutoresizingMaskIntoConstraints="NO" id="F2B-mz-2VX">
-                                <rect key="frame" x="0.0" y="426" width="393" height="426"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="34K-nG-otO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4ke-GF-Q4s"/>
+                            <constraint firstAttribute="trailing" secondItem="34K-nG-otO" secondAttribute="trailing" id="Gjb-f6-ig0"/>
+                            <constraint firstItem="F2B-mz-2VX" firstAttribute="height" secondItem="34K-nG-otO" secondAttribute="height" id="K2p-e4-cCz"/>
+                            <constraint firstItem="34K-nG-otO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="LhG-Jh-Ppg"/>
+                            <constraint firstItem="ygb-yQ-0F9" firstAttribute="top" secondItem="F2B-mz-2VX" secondAttribute="bottom" id="My3-yE-pVj"/>
+                            <constraint firstItem="34K-nG-otO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Oze-rT-duR"/>
+                            <constraint firstAttribute="trailing" secondItem="F2B-mz-2VX" secondAttribute="trailing" id="axm-c2-en6"/>
+                            <constraint firstAttribute="trailing" secondItem="F2B-mz-2VX" secondAttribute="trailing" id="eY3-pQ-s8S"/>
+                            <constraint firstItem="F2B-mz-2VX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="j9G-qv-fHB"/>
+                            <constraint firstItem="F2B-mz-2VX" firstAttribute="top" secondItem="34K-nG-otO" secondAttribute="bottom" id="mw0-rU-gk7"/>
                             <constraint firstItem="34K-nG-otO" firstAttribute="top" secondItem="lb8-Ai-jYs" secondAttribute="bottom" constant="-59" id="oei-62-oJy"/>
+                            <constraint firstAttribute="trailing" secondItem="34K-nG-otO" secondAttribute="trailing" id="rij-7z-0Cg"/>
+                            <constraint firstItem="ygb-yQ-0F9" firstAttribute="top" secondItem="F2B-mz-2VX" secondAttribute="bottom" id="vib-rv-LQX"/>
                             <constraint firstItem="ygb-yQ-0F9" firstAttribute="top" secondItem="F2B-mz-2VX" secondAttribute="bottom" constant="46" id="ytW-Kr-Aa7"/>
+                            <constraint firstAttribute="trailing" secondItem="34K-nG-otO" secondAttribute="trailing" id="zPl-Zu-4ED"/>
+                            <constraint firstItem="F2B-mz-2VX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zdk-s0-mFV"/>
                         </constraints>
                     </view>
                 </viewController>
